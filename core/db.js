@@ -18,7 +18,7 @@ const sequelize = new Sequelize(dbName, user, password, {
 });
 
 sequelize.sync({
-    force: true // 生产一定要改回 false
+    force: false // 生产一定要改回 false
 });
 
 module.exports = {
